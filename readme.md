@@ -20,11 +20,12 @@
 <p>6. py manage.py startapp home       - создание приложения с именем home (вы можете писать другое)</p> 
 <p> web приложение - это отдельная логическая часть отвечающая за определенные функционал <br>
 например : вход оплата главная_страница чат профиль 
-<p>7.  py manage.py runserver - запуск сервера локально </p> 
+<p>7.  py manage.py runserver - запуск сервера локально <br>
+переходим по ссылке http://127.0.0.1:8000/ </p> 
 <p>8. создать папку templates - для хранения html(страничек)  </p> 
 <p>9. создать index.html в templates - страничка котораяа будет отображаться  </p> 
-<p>10. в main/settins.py в списке INSTALLED_APPS зыписываю свое приложение "home"</p> 
-<p>11. в main/settins.py в списке TEMPLATES  в ключе DIRS указать путь в папке templates :<br>
+<p>10. в main/settings.py в списке INSTALLED_APPS зыписываю свое приложение "home"</p> 
+<p>11. в main/settings.py в списке TEMPLATES  в ключе DIRS указать путь в папке templates :<br>
 'DIRS': [BASE_DIR/"templates"]
 </p>
 <p>12. создаем функцию в home/views.py </p>
