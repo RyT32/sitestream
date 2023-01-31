@@ -22,9 +22,16 @@
 например : вход оплата главная_страница чат профиль 
 <p>7.  py manage.py runserver - запуск сервера локально </p> 
 <p>8. создать папку templates - для хранения html(страничек)  </p> 
-
-
-
+<p>9. создать index.html в templates - страничка котораяа будет отображаться  </p> 
+<p>10. в main/settins.py в списке INSTALLED_APPS зыписываю свое приложение "home"</p> 
+<p>11. в main/settins.py в списке TEMPLATES  в ключе DIRS указать путь в папке templates :<br>
+'DIRS': [BASE_DIR/"templates"]
+</p>
+<p>12. создаем функцию в home/views.py </p>
+<p>13. указываю ссылку в main/urls.py и функцию которая будет срабатывать по этому запросу </p>
+<p>. </p>
+<p>. </p>
+<p>. </p>
 
 
 
