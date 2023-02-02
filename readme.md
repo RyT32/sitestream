@@ -22,16 +22,43 @@
 например : вход оплата главная_страница чат профиль 
 <p>7.  py manage.py runserver - запуск сервера локально <br>
 переходим по ссылке http://127.0.0.1:8000/ </p> 
-<p>8. создать папку templates - для хранения html(страничек)  </p> 
+<p>8. создать папку templates и media - для хранения html(страничек) и медиафайлов </p> 
 <p>9. создать index.html в templates - страничка котораяа будет отображаться  </p> 
 <p>10. в main/settings.py в списке INSTALLED_APPS зыписываю свое приложение "home"</p> 
 <p>11. в main/settings.py в списке TEMPLATES  в ключе DIRS указать путь в папке templates :<br>
 'DIRS': [BASE_DIR/"templates"]
+<p>в конце добавляем путь к медиа файлам:<br>MEDIA_ROOT = os.path.join(BASE_DIR, 'media')<br>
+MEDIA_URL = '/media/'</p>
 </p>
 <p>12. создаем функцию в home/views.py </p>
 <p>13. указываю ссылку в main/urls.py и функцию которая будет срабатывать по этому запросу </p>
-<p>. to be continue... </p>
-<p>. база даннных </p>
+<p>14. python manage.py migrate  - делаем миграции (преобразуем python коде через систему ORM  в  sql-заросы) </p>
+<hr>
+<h2>Создание БД</h2>
+<p>15. В models.py создаем свою модель </p>
+<hr>
+<h2> Структура проекта<р2>
+<ul>
+
+
+<li>article</li>
+<li>card</li>
+<li>catalog</li>
+<li>home</li>
+<li>main</li>
+
+
+<li>accounts</li>
+<li>api</li>
+
+<li>templates</li>
+<li>media</li>
+</ul>
+
+
+
+
+<hr>
 <p>.API работа_с_сслыками фронт  </p>
 
 
